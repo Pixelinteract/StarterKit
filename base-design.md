@@ -57,6 +57,8 @@ Never use arbitrary px values for font-size, padding, or margin.
   --radius-badge:  50px;     /* Tags, pills, badges */
   --radius-input:  8px;      /* Form inputs */
   --radius-round:  9999px;   /* Fully round — avatars, icon circles */
+  --radius-lg:     20px;     /* larger cards, panels */
+  --radius-xl:     28px;     /* feature cards, prominent panels */
 
   /* ── SHADOWS ── */
   --shadow-card:   0 2px 12px rgba(0,0,0,0.08);          /* Default card elevation */
