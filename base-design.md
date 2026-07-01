@@ -2,7 +2,7 @@
 
 System-wide structural rules. Copy unchanged into every new client repo.
 Never edit this file during a client build — brand overrides go in brand-design.md.
-Last updated: July 2026 (v1.2) — added --text-display token for hero headlines
+Last updated: July 2026 (v1.3) — added --space-8 for hero top padding
 
 ---
 
@@ -44,6 +44,7 @@ Never use arbitrary px values for font-size, padding, or margin.
   --space-5:    clamp(40px, 6vw, 64px);            /* Section padding vertical */
   --space-6:    clamp(64px, 8vw, 100px);           /* Large section padding */
   --space-7:    clamp(80px, 10vw, 140px);          /* Hero padding vertical */
+  --space-8:    clamp(120px, 14vw, 260px);         /* Hero top padding — nav clearance only */
 
   /* ── MAX WIDTHS ── */
   --width-content: 1160px;   /* Standard container — most sections */
