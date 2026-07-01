@@ -23,6 +23,25 @@ Add these to the :root block in assets/css/styles.css, after the base token bloc
 
 ---
 
+## Shadows
+
+Brand-coloured shadows (button glows, floating action buttons) don't belong in
+base-design.md's neutral --shadow-* scale — they're derived from this client's
+own brand colours. Add these to the same :root block as Colors, above.
+
+```css
+:root {
+  --shadow-btn-brand:       0 4px 16px rgba([primary-rgb],0.30);   /* Primary CTA glow */
+  --shadow-btn-brand-hover: 0 8px 28px rgba([secondary-rgb],0.35); /* Primary CTA hover glow */
+}
+```
+
+Any other per-element brand-coloured glow (e.g. a floating WhatsApp/contact
+button, feature-card hover accents) should follow the same pattern: a named
+--shadow-[element]-brand variable here, not a raw rgba() value in styles.css.
+
+---
+
 ## Typography
 
 - **Heading font:** [Font name] — weights [e.g. 700, 900]
