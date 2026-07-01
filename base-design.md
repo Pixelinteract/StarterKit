@@ -2,7 +2,7 @@
 
 System-wide structural rules. Copy unchanged into every new client repo.
 Never edit this file during a client build — brand overrides go in brand-design.md.
-Last updated: July 2026 (v1.0)
+Last updated: July 2026 (v1.2) — added --text-display token for hero headlines
 
 ---
 
@@ -34,6 +34,7 @@ Never use arbitrary px values for font-size, padding, or margin.
   --text-xl:    clamp(1.5rem, 4vw, 2.25rem);       /* H2, section headings */
   --text-2xl:   clamp(2rem, 5vw, 3rem);            /* H1, hero headings */
   --text-3xl:   clamp(2.5rem, 6vw, 4rem);          /* Hero display / jumbo headline */
+  --text-display: clamp(3rem, 8vw, 5.25rem);       /* 48px → 84px — hero display headlines only */
 
   /* ── SPACING SCALE ── */
   --space-1:    clamp(4px, 1vw, 8px);              /* Tight gaps, icon spacing */
