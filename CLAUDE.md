@@ -29,10 +29,9 @@ For a new client, copy this file into the repo root and fill in the
 
 ## Golden rules (apply to every site)
 
-### 1.Reference files — read all of these at session start
-- sop_v2.md — full build SOP, head template, GA4, SEO rules, JSON-LD, folder structure
-- base-design.md — tokens, breakpoints, dividers, animations
-- brand-design.md — this client's colors, fonts, tone, business details
+### 1. Design files load in this order — always follow both
+- `base-design.md` — structural rules, spacing, breakpoints, tokens. Never override.
+- `brand-design.md` — this client's colors, fonts, tone. Sits on top of base rules only.
 
 ### 2. Sizing and spacing — use tokens, never raw px
 - Font sizes, padding, margin: always use fluid tokens defined in base-design.md
