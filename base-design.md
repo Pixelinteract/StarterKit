@@ -2,7 +2,7 @@
 
 System-wide structural rules. Copy unchanged into every new client repo.
 Never edit this file during a client build — brand overrides go in brand-design.md.
-Last updated: July 2026 (v1.3) — added --space-8 for hero top padding
+Last updated: July 2026 (v1.4) — added --z-sticky-under and --z-float
 
 ---
 
@@ -74,9 +74,11 @@ Never use arbitrary px values for font-size, padding, or margin.
   --z-raised:      10;       /* Cards on hover, tooltips */
   --z-dropdown:    100;      /* Dropdowns, select menus */
   --z-sticky:      200;      /* Sticky nav */
+  --z-sticky-under: 199;     /* Elements tucked just beneath sticky nav (e.g. mobile menu) */
   --z-overlay:     300;      /* Page overlays, backdrops */
   --z-modal:       400;      /* Modals, drawers */
   --z-toast:       500;      /* Notifications, toasts */
+  --z-float:       999;      /* Floating action buttons — always topmost */
 
   /* ── LINE HEIGHTS ── */
   --leading-tight:   1.1;    /* Large display headings, hero H1 */
