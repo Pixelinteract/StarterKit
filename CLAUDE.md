@@ -6,13 +6,26 @@ For a new client, copy this file into the repo root and fill in the
 
 ---
 
+## Session start — read these first
+
+Before doing anything else, fetch and read these files from StarterKit:
+
+- SOP: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/sop_v2.md
+- Base design: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/base-design.md
+- Brand design: brand-design.md (in this repo — read locally)
+
+Do not proceed with any build task until all three are loaded.
+
+---
+
 ## New client kickoff checklist
 
-1. [ ] Copy CLAUDE.md, base-design.md, brand-design.md from frw-template repo
+1. [ ] Copy CLAUDE.md and brand-design.md from StarterKit into this repo root
 2. [ ] Fill in the Client setup section below
 3. [ ] Fill in brand-design.md from the compiled Client Brief
 4. [ ] Confirm folder structure: flat root, assets/css, assets/images, assets/js, assets/includes
 5. [ ] Add Open Props import as first line of assets/css/styles.css
+6. [ ] Paste full :root token block from base-design.md into styles.css below the import
 
 ---
 
@@ -30,12 +43,12 @@ For a new client, copy this file into the repo root and fill in the
 ## Golden rules (apply to every site)
 
 ### 1. Design files load in this order — always follow both
-- `base-design.md` — structural rules, spacing, breakpoints, tokens. Never override.
-- `brand-design.md` — this client's colors, fonts, tone. Sits on top of base rules only.
+- `base-design.md` (fetched from StarterKit) — structural rules, tokens, breakpoints. Never override.
+- `brand-design.md` (in this repo) — this client's colors, fonts, tone. Sits on top of base rules only.
 
 ### 2. Sizing and spacing — use tokens, never raw px
 - Font sizes, padding, margin: always use fluid tokens defined in base-design.md
-- Fixed px is only permitted for borders, icon sizes, and border-radius
+- Fixed px only permitted for borders, icon sizes, and border-radius
 - Never invent arbitrary values — pick the nearest token from the scale
 
 ### 3. CSS formatting — single-line rules
@@ -66,10 +79,3 @@ assets/includes/footer.html. Never hardcode nav or footer in page files.
 Never modify base-design.md during a client build. If something is genuinely
 missing from the token scale or rules, stop and flag it with:
 "BASE DESIGN GAP: [what's missing and why]. Should this be added to base-design.md?"
-
----
-
-## Reference files
-- Full build SOP: sop_v2.md
-- Base design system: base-design.md
-- Client brand: brand-design.md
