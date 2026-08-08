@@ -79,3 +79,21 @@ assets/includes/footer.html. Never hardcode nav or footer in page files.
 Never modify base-design.md during a client build. If something is genuinely
 missing from the token scale or rules, stop and flag it with:
 "BASE DESIGN GAP: [what's missing and why]. Should this be added to base-design.md?"
+
+### 9. Banned words
+Never use these words:
+
+- **honest**
+- **honestly**
+- **crap**
+
+This applies to all Free Range Websites copy — every page, heading, meta
+description, alt text, schema string and email — and it applies equally to
+Claude Code's own output in the session: chat replies, commit messages,
+comments and file names. There is no context in which they are acceptable,
+including quoting them back or using them ironically. If a sentence needs one
+of them to work, rewrite the sentence.
+
+The rule extends to obvious variants of the same words (honesty, dishonest,
+crappy). Where existing copy already contains a banned word, leave it alone
+unless you are editing that copy anyway — then fix it in passing.
