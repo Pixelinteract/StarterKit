@@ -40,7 +40,7 @@ Client pays via Stripe
   ├── Stripe redirects client → /onboarding.html (immediate, while engaged)
   │
   └── Make.com fires in background:
-        1. Creates Google Drive folder → frw-[clientname]
+        1. Creates Google Drive folder → [clientname]
         2. Sends welcome email → with Tally form link + Drive folder link
         3. Logs new client row → Google Sheets CRM
 ```
@@ -103,7 +103,7 @@ Build this as a single scenario in Make.com triggered by a new Stripe payment.
 **Actions in order:**
 
 1. **Google Drive → Create a Folder**
-   - Name: `frw-[customer name]` — use the name field from the Stripe event
+   - Name: `[customer name]` — use the name field from the Stripe event
    - Location: inside a parent `FRW Clients` folder in your Drive
    - Set sharing to *Anyone with the link can upload*
 
@@ -161,7 +161,7 @@ Two required steps up top, book-a-call below the divider as a soft optional offe
 
 Once the Tally form is submitted and photos are in Drive, compile everything into a **Client Brief** before handing to Claude. This is the single source of truth for the build.
 
-Use this template — copy it into a new Google Doc named `frw-[clientname]-brief`:
+Use this template — copy it into a new Google Doc named `[clientname]-brief`:
 
 ```
 CLIENT BRIEF — [Business Name]
@@ -540,7 +540,7 @@ Before deploying, confirm these files exist in `/assets/images/`:
 
 ## Deployment — Cloudflare Pages via GitHub
 
-1. Create a new **private GitHub repo** for the client — naming convention: `frw-[clientname]`
+1. Create a new **private GitHub repo** for the client — naming convention: `[clientname]`
 2. Push all files to `main` branch
 3. Connect repo to Cloudflare Pages
 4. Set build command to: *(none — static site, no build step)*

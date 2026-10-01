@@ -1,6 +1,6 @@
 # FreeRange Websites — StarterKit
 
-Three files that go into every new client repo at kickoff.
+Three files that go into every new client repo at kickoff, plus two design taste files that stay in StarterKit and are fetched at design time.
 Source of truth for the FRW build system.
 
 ---
@@ -12,6 +12,8 @@ Source of truth for the FRW build system.
 | `CLAUDE.md` | Auto-loaded by Claude Code. Golden rules, repo setup, build conventions. | No — copy unchanged |
 | `base-design.md` | Design system. Tokens, breakpoints, dividers, scroll animations. | No — copy unchanged |
 | `brand-design.md` | Brand layer. Colors, fonts, tone, business details. | Yes — fill from Client Brief |
+| `Taste-SKILL.md` | Anti-slop design direction. Read before any design work. | No — fetched from StarterKit, not copied |
+| `tasteskill-FE.md` | Image-direction skill for section design references. | No — fetched from StarterKit, not copied |
 
 ---
 
@@ -19,7 +21,7 @@ Source of truth for the FRW build system.
 
 **1. Create the client repo**
 ```
-GitHub → New repository → Name: frw-[clientname] → Private
+GitHub → New repository → Name: [clientname] → Private
 ```
 
 **2. Copy all three files from StarterKit into the new repo root**
@@ -69,7 +71,7 @@ Existing client repos keep their own frozen copy. A StarterKit update does not a
 ## Folder structure — every client repo
 
 ```
-frw-[clientname]/
+[clientname]/
 ├── CLAUDE.md
 ├── base-design.md
 ├── brand-design.md

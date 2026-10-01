@@ -16,6 +16,12 @@ Before doing anything else, fetch and read these files from StarterKit:
 
 Do not proceed with any build task until all three are loaded.
 
+Before any design work (layout, hero, section concepts, visual direction,
+imagery), also fetch and read the design taste files — see golden rule 10:
+
+- Taste skill: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/Taste-SKILL.md
+- Taste image skill: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/tasteskill-FE.md
+
 ---
 
 ## New client kickoff checklist
@@ -33,10 +39,10 @@ Do not proceed with any build task until all three are loaded.
 
 - **Business name:** [Business Name]
 - **Domain:** [domain.com.au]
-- **GitHub repo:** Pixelinteract/frw-[clientname] (branch: main)
+- **GitHub repo:** Pixelinteract/[clientname] (branch: main)
 - **Hosting:** Cloudflare Pages (no build step, root = /)
 - **Plan:** Starter / Standard
-- **Local repo path:** /Users/basil/Desktop/FreeRange/frw-[clientname]
+- **Local repo path:** /Users/basil/Desktop/FreeRange/Clients/[clientname]
 
 ---
 
@@ -97,3 +103,29 @@ of them to work, rewrite the sentence.
 The rule extends to obvious variants of the same words (honesty, dishonest,
 crappy). Where existing copy already contains a banned word, leave it alone
 unless you are editing that copy anyway — then fix it in passing.
+
+### 10. Design taste files — use them for every design decision
+Two taste files live in StarterKit. Use them whenever you make creative design
+decisions, so sites do not come out looking templated.
+
+- `Taste-SKILL.md` — anti-slop design direction. Use it to read the brief, pick a
+  design direction, and check the work against its AI-tells list (typography,
+  colour, layout, copy, imagery, motion restraint). Run its pre-flight check
+  before calling a section done.
+- `tasteskill-FE.md` — image-direction skill. Use it when generating design
+  reference images or section concepts: one horizontal image per section,
+  one palette across all images, varied composition. If the client supplies a
+  wireframe, the wireframe sets structure and the images only set look and feel.
+
+**Precedence — the taste files never override the build system:**
+1. `base-design.md` and this file win on stack, tokens, spacing, breakpoints,
+   file structure, CSS formatting and fonts loading. Ignore any taste-file advice
+   about React, Next.js, Tailwind, shadcn, Motion, `next/font`, raw px values or
+   avoiding Google Fonts links. This is plain HTML and CSS only.
+2. `brand-design.md` wins on colours, fonts and tone. Taste files steer choices
+   within the brand; they never swap the brand palette or fonts.
+3. Taste files steer the rest: composition, hierarchy, imagery, copy tone,
+   motion restraint, section rhythm.
+
+Skip both files for pure content edits, copy fixes and bug fixes. Read them for
+anything that changes how the site looks.
