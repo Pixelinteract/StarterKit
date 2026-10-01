@@ -1,6 +1,6 @@
 # FreeRange Websites — StarterKit
 
-Three files that go into every new client repo at kickoff, plus two design taste files that stay in StarterKit and are fetched at design time.
+Three files that go into every new client repo at kickoff, plus two design taste files and two content skills that stay in StarterKit and are fetched when needed.
 Source of truth for the FRW build system.
 
 ---
@@ -14,6 +14,8 @@ Source of truth for the FRW build system.
 | `brand-design.md` | Brand layer. Colors, fonts, tone, business details. | Yes — fill from Client Brief |
 | `Taste-SKILL.md` | Anti-slop design direction. Read before any design work. | No — fetched from StarterKit, not copied |
 | `tasteskill-FE.md` | Image-direction skill for section design references. | No — fetched from StarterKit, not copied |
+| `Content-antislop-SKILL.md` | Removes AI writing patterns from copy. Read before writing or editing any copy. | No — fetched from StarterKit, not copied |
+| `Ogilvy-marketing-SKILL.md` | Copy that sells: positioning, promise, headlines, proof. | No — fetched from StarterKit, not copied |
 
 ---
 

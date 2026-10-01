@@ -22,6 +22,12 @@ imagery), also fetch and read the design taste files — see golden rule 10:
 - Taste skill: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/Taste-SKILL.md
 - Taste image skill: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/tasteskill-FE.md
 
+Before writing or editing any copy, also fetch and read the content skills — see
+golden rule 11:
+
+- Content anti-slop skill: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/Content-antislop-SKILL.md
+- Ogilvy marketing skill: https://raw.githubusercontent.com/Pixelinteract/StarterKit/main/Ogilvy-marketing-SKILL.md
+
 ---
 
 ## New client kickoff checklist
@@ -129,3 +135,26 @@ decisions, so sites do not come out looking templated.
 
 Skip both files for pure content edits, copy fixes and bug fixes. Read them for
 anything that changes how the site looks.
+
+### 11. Content skills — use them for all written copy
+Two content skills live in StarterKit. Use them whenever you write or edit
+visible copy: headlines, body text, button labels, meta descriptions, alt text,
+reviews framing and social blurbs.
+
+- `Content-antislop-SKILL.md` — removes AI writing patterns: filler openers,
+  adverbs, passive voice, binary contrasts ("not X, it's Y"), false agency,
+  three-item lists, lazy extremes (every, always, never), em dashes. Run its
+  quick checks before calling copy done.
+- `Ogilvy-marketing-SKILL.md` — copy that sells: one positioning, one promise,
+  headlines that carry a benefit and proof, specific facts over adjectives,
+  credible testimonials. Answer its diagnostic questions before writing a hero.
+
+**Precedence:**
+1. The banned words in rule 9 and Aussie English from the SOP always win.
+2. Title tags and meta descriptions keep the SOP format
+   (`[Service] in [Suburb] | [Business Name]`), even where Ogilvy would write
+   a longer headline.
+3. Never invent a claim to satisfy a skill. Every promise, policy, number and
+   brand name in the copy must come from the Client Brief, the client's Google
+   profile or real reviews. If a strong promise is not confirmed, write the
+   confirmed version and flag the gap to the user.
